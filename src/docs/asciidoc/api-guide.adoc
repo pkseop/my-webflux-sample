@@ -1,0 +1,43 @@
+= API Guide Example
+Tim Park;
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:secnum:
+:docinfo1:
+:GET: pass:quotes[[.label.get]#GET#]
+:POST: pass:q[[.label.post]#POST#]
+:PUT: pass:q[[.label.put]#PUT#]
+:PATCH: pass:q[[.label.patch]#PATCH#]
+:DELETE: pass:q[[.label.delete]#DELETE#]
+
+
+[[overview]]
+== Overview
+
+
+
+API Example
+
+[[User]]
+
+== User
+
+=== Get users
+
+{GET} [.label2.url]*\https://api.my-sample.com/base/user*
+
+include::{snippets}/user-controller-test/get-users/request-parameters.adoc[]
+
+===== HTTP Request
+include::{snippets}/user-controller-test/get-users/http-request.adoc[]
+
+include::{snippets}/user-controller-test/get-users/response-fields.adoc[]
+
+===== HTTP Response
+include::{snippets}/user-controller-test/get-users/http-response.adoc[]
+
+{nbsp} +
